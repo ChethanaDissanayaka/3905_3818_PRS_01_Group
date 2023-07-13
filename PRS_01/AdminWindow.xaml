@@ -1,0 +1,58 @@
+﻿<Window x:Class="PRS_01.AdminWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PRS_01"
+        mc:Ignorable="d"
+        Title="AdminWindow" Height="550" Width="840" WindowStartupLocation="CenterScreen"
+        WindowStyle="None" ResizeMode="NoResize">
+
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0.9,1">
+                <GradientStop Color="Pink" Offset="1"/>
+                <GradientStop Color="CornflowerBlue" Offset="0"/>
+                <!--<GradientStop Color="#FFE63070" Offset="0"/>-->
+                <!--<GradientStop Color="#FFFE8704" Offset="0"/>-->
+            </LinearGradientBrush>
+
+        </Grid.Background>
+        <Border CornerRadius="80"
+                Background="#100E17" Margin="30" HorizontalAlignment="Left"  >
+            <StackPanel Orientation="Horizontal">
+                
+                <StackPanel Width="270" Orientation="Vertical" >
+                    <Image Source="Images/4.png" Width="200" Height="200"  HorizontalAlignment="Center"
+                           VerticalAlignment="Top" Margin="40" Stretch="Fill"/>
+                    <Button Content="Normal Users" Width="180" Margin="20" Padding="10" Height="50"  Foreground="Black" Background="White"
+                                FontSize="20" Click="Button_User" Style="{StaticResource mainbutton}" />
+                </StackPanel>
+                
+
+                <StackPanel Orientation="Vertical" Margin="10" Width="240">
+                    <Image Source="Images/5.png" Width="200" Height="200"
+                           VerticalAlignment="Top" Margin="40" Stretch="Fill" HorizontalAlignment="Center"/>
+                    <Button Content="Patients" Width="180" Margin="20" Padding="10" Height="50" Foreground="Black" Background="White"
+                                FontSize="20" Click="Button_Patients" Style="{StaticResource mainbutton}" />
+                    <Button Content="Back" Width="180" Margin="20" Padding="10" Height="50" Foreground="White" Background="red"
+                                FontSize="20" Click="Button_Back3" Style="{StaticResource mainbutton}" />
+                    
+                </StackPanel>
+                
+
+                <StackPanel Orientation="Vertical" Margin="10" Width="230">
+                    <Image Source="Images/6.png" Width="200" Height="200"  HorizontalAlignment="Center"
+                           VerticalAlignment="Top" Margin="40" Stretch="Fill"/>
+                    <Button Content="Bill Calculation" Width="180" Margin="20" Padding="10" Height="50" Foreground="Black" Background="White"
+                                FontSize="20" Click="Button_Bill" Style="{StaticResource mainbutton}" />
+                </StackPanel>
+
+
+            </StackPanel>
+
+        </Border>
+    </Grid>
+</Window>
+
+   
