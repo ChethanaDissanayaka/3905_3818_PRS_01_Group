@@ -14,39 +14,44 @@ using System.Windows.Shapes;
 
 namespace PRS_01
 {
-    /// <summary>
-    /// Interaction logic for AdminWindow.xaml
-    /// </summary>
+   
     public partial class AdminWindow : Window
     {
         public AdminWindow()
         {
-            DataContext = new AdminWindowVM();
+          
             InitializeComponent();
         }
-        private void Button_User(object sender, RoutedEventArgs e)
+        private void SR_1(object sender, RoutedEventArgs e)
         {
             var Window = new UsersWindow();
             Window.Show();
             this.Close();
         }
-        private void Button_Patients(object sender, RoutedEventArgs e)
+        private void PR_1(object sender, RoutedEventArgs e)
         {
             var Window = new PatientsWindow();
             Window.Show();
             this.Close();
         }
 
-        private void Button_Bill(object sender, RoutedEventArgs e)
+        private void BC_1(object sender, RoutedEventArgs e)
         {
             var Window = new BillWindow();
             Window.Show();
             this.Close();
         }
 
-        private void Button_Back3(object sender, RoutedEventArgs e)
+        private void Back_1(object sender, RoutedEventArgs e)
         {
             var Window = new MainWindow();
+            Window.Show();
+            this.Close();
+        }
+
+        private void E_1(object sender, RoutedEventArgs e)
+        {
+            var Window = new LoginWindow();
             Window.Show();
             this.Close();
         }

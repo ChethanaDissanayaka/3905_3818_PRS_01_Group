@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PRS_01
 {
-    class AdminWindowVM
+    public class BillWindowVM
     {
     }
 }

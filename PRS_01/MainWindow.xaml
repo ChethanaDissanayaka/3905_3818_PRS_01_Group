@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PRS_01"
         mc:Ignorable="d"
-        Title="MainWindow" Height="620" Width="825" WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="550" Width="740" WindowStartupLocation="CenterScreen"
         WindowStyle="None" ResizeMode="NoResize">
     <Window.DataContext>
         <local:DataContext/>    
@@ -13,83 +13,42 @@
     <Grid>
         <Grid.Background>
             <LinearGradientBrush>
-                <GradientStop Color="CornflowerBlue" Offset="1"/>
-                <!--<GradientStop Color="#FFE63070" Offset="1"/>-->
-                <!--<GradientStop Color="#FFFE8704" Offset="0"/>-->
+                <GradientStop Color="#100E17" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
         
-        <Border CornerRadius="100 100 100 100"
-                Background="#100E17" Margin="40,40,40,40">
+        <Border CornerRadius="50"
+                Background="DarkSlateBlue" Margin="40,40,40,40">
             <StackPanel Width="750"   VerticalAlignment="Top">
-                <Label Content="Patient   Registration   System" FontSize="40" Foreground="Pink"
-                            HorizontalAlignment="Center" Margin="20" FontWeight="Bold"/>
-             
-                <StackPanel Orientation="Vertical" Width="350" HorizontalAlignment="Left" Height="500">
-                    <Image Source="Images/1.png" Width="250" Height="350"
-                           VerticalAlignment="Top" Margin="50 20 50 50" Stretch="Fill"/>
-                    
+                <Label Content="Login Page" FontSize="40" Foreground="#100E17" 
+                            HorizontalAlignment="Center" Margin="20" FontWeight="ExtraBold"/>
+
+                <StackPanel Orientation="Vertical" Width="300" HorizontalAlignment="Left" Height="500" >
+                    <Image Source="Images/a_1.jpg" Width="200" Height="250"
+                           VerticalAlignment="Top" Margin="0 5 30 0" Stretch="Fill"/>
+
                 </StackPanel>
                 <StackPanel Width="400" Orientation="Vertical" HorizontalAlignment="Right" Margin="20 -530">
-                    <StackPanel Margin="20,20" >
-                        <Label Content="Login" Margin="10" Foreground="White" FontWeight="Bold" 
-                                   HorizontalAlignment="Center" FontSize="30"/>
-
-                        <TextBlock Text="User Name :" Margin="5" FontSize="20" Foreground="White" Height="30"/>
+                    <StackPanel Margin="-60,30,100,0" >
+                        <TextBlock Text="User Name :" Margin="5" FontSize="20" Foreground="#100E17" Height="30" FontWeight="ExtraBold"/>
                         <TextBox x:Name="UsernameTextBox" Margin="5" Text="{Binding Username, Mode=TwoWay}"  Height="30"/>
 
-                        <TextBlock Text="Password   :" Margin="5" FontSize="20" Foreground="White" Height="30"/>
+                        <TextBlock Text="Password   :" Margin="5" FontSize="20" Foreground="#100E17" Height="30" FontWeight="ExtraBold"/>
                         <TextBox x:Name="PasswordBox" Height="30" Margin="5"
-                                 Text ="{Binding Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
-                        
-                        <TextBlock Text="User Type :" Margin="0 5" FontSize="20" Foreground="White" Height="30"/>
+                                 Text ="{Binding Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  />
+
+                        <TextBlock Text="User Type :" Margin="0 5" FontSize="20" Foreground="#100E17" Height="30" FontWeight="ExtraBold"/>
                         <ComboBox x:Name="UsertypeBox" Margin="5" Height="30" FontSize="20" 
                                   ItemsSource="{Binding names}" Text="" />
 
                         <StackPanel Orientation="Horizontal" Margin="10">
-                            <Button Content="Login" Width="280" Margin="20" Padding="10"
+                            <Button Content="Login" Width="280" Margin="20" Padding="10" Background="#100E17"
                                     Click="Button_Click" Style="{StaticResource mainbutton}" />
                         </StackPanel>
-
-
                     </StackPanel>
-
-
                 </StackPanel>
-
             </StackPanel>
-            
-            
-            <!--<StackPanel Orientation="Horizontal">
-                
-                <StackPanel Width="350">
-                    <Image Source="Images/1.png" Width="250" Height="350"
-                           VerticalAlignment="Top" Margin="30" Stretch="Fill"/>
-                </StackPanel>
-                <StackPanel Width="400">
-                    <StackPanel Margin="20,20">
-                        <Label Content="Login" Margin="10" Foreground="White"
-                                   HorizontalAlignment="Center" FontSize="35"/>
-
-                        <TextBlock Text="User Name :" Margin="10" FontSize="20" Foreground="White" Height="40"/>
-                        <TextBox x:Name="UsernameTextBox" Margin="10" Text="{Binding Username, Mode=TwoWay}"  Height="30"/>
-
-                        <TextBlock Text="Password   :" Margin="10" FontSize="20" Foreground="White" Height="40"/>
-                        <TextBox x:Name="PasswordBox" Height="30" Margin="10"
-                                 Text ="{Binding Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
-
-                        <StackPanel Orientation="Horizontal" Margin="10">
-                            <Button Content="Login" Width="280" Margin="20" Padding="10" Height="50" 
-                                FontSize="20" Click="Button_Click" Style="{StaticResource mainbutten}" />
-                        </StackPanel>
-
-
-                    </StackPanel>
-
-
-                </StackPanel>
-            </StackPanel>-->
-
         </Border>
     </Grid>
 </Window>
+    

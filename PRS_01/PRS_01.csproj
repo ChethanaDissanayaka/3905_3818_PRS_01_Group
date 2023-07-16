@@ -8,12 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Images\1.png" />
-    <None Remove="Images\2.png" />
-    <None Remove="Images\3.png" />
-    <None Remove="Images\4.png" />
-    <None Remove="Images\5.png" />
-    <None Remove="Images\6.png" />
+    <None Remove="a_1.jpg" />
+    <None Remove="Images\.1.png" />
+    <None Remove="Images\a_1.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -26,15 +23,16 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="xunit" Version="2.5.0" />
+    <PackageReference Include="xunit.analyzers" Version="1.2.0" />
+    <PackageReference Include="xunit.assert" Version="2.5.0" />
+    <PackageReference Include="xunit.core" Version="2.5.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Images\1.png" />
-    <Resource Include="Images\2.png" />
-    <Resource Include="Images\3.png" />
-    <Resource Include="Images\4.png" />
-    <Resource Include="Images\5.png" />
-    <Resource Include="Images\6.png" />
+    <Resource Include="a_1.jpg" />
+    <Resource Include="Images\.1.png" />
+    <Resource Include="Images\a_1.jpg" />
   </ItemGroup>
 
 </Project>

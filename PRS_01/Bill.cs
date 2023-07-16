@@ -18,7 +18,7 @@ namespace PRS_01
         public float Service_Charge { get; set; }
         public int  No_Days { get; set; }
         public float Doctor_Charge { get; set; }
-        //public string Gender { get; set; }
+       
        
     }
 }

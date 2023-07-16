@@ -24,23 +24,31 @@ namespace PRS_01
             InitializeComponent();
         }
 
-        private void Button_Patients2(object sender, RoutedEventArgs e)
+        private void PR_2(object sender, RoutedEventArgs e)
         {
             var Window = new PatientsWindow();
             Window.Show();
             this.Close();
         }
 
-        private void Button_Bill2(object sender, RoutedEventArgs e)
+        private void BC_2(object sender, RoutedEventArgs e)
         {
             var Window = new BillWindow();
             Window.Show();
             this.Close();
         }
 
-        private void Button_Back4(object sender, RoutedEventArgs e)
+        private void Back_2(object sender, RoutedEventArgs e)
         {
             var Window = new MainWindow();
+            Window.Show();
+            this.Close();
+        }
+
+        private void E_2(object sender, RoutedEventArgs e)
+        {
+
+            var Window = new LoginWindow();
             Window.Show();
             this.Close();
         }

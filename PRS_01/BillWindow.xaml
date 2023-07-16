@@ -8,7 +8,7 @@
         WindowStartupLocation="CenterScreen"
         WindowStyle="None" ResizeMode="NoResize"
         Title="BillWindow" Height="810" Width="1450">
-    <Grid Background="Pink" >
+    <Grid Background="DeepSkyBlue" >
         <StackPanel Height="60" HorizontalAlignment="Left" VerticalAlignment="Top" Background="Black" Width="1450">
             <TextBlock HorizontalAlignment="Center"  VerticalAlignment="Top" FontSize="30" Margin="10"
                           Text="Total  Bill  Information" Foreground="White" FontWeight="Bold" Background="Black"/>
@@ -18,14 +18,12 @@
                   Width="1210"  SelectionChanged="ItemList2_SelectionChanged" >
             <ListView.ContextMenu >
                 <ContextMenu HorizontalAlignment="Center">
-                    <!--<MenuItem Header="Clear" Click="Menu2Item_Click"/>-->
+
                 </ContextMenu>
             </ListView.ContextMenu >
             <ListView.View >
                 <GridView  >
-                    <!--<GridViewColumn  Header="User Id" Width="150" DisplayMemberBinding="{Binding User_Id}"/>-->
                     <GridViewColumn Header="Name"  Width="150" DisplayMemberBinding="{Binding Name}"/>
-                    <!--<GridViewColumn Header="Last Name" Width="150" DisplayMemberBinding="{Binding Last_Name}"/>-->
                     <GridViewColumn Header="Addmitted Date" Width="150" DisplayMemberBinding="{Binding Add_Date}"/>
                     <GridViewColumn Header="Discharged Date" Width="150" DisplayMemberBinding="{Binding Dis_Date}"/>
                     <GridViewColumn Header="NO. Dates" Width="100" DisplayMemberBinding="{Binding No_Days}"/>
@@ -36,12 +34,6 @@
                 </GridView>
             </ListView.View>
         </ListView>
-
-        <!--<CheckBox x:Name="EnableCheckBox" Content="Edit" HorizontalAlignment="Left" Width="100" 
-                  Height="30" FontSize="20"
-                  Margin="20 440 0 0" VerticalAlignment="Top"
-        x:Name="EDitGrid" IsEnabled="{Binding ElementName=EnableCheckBox,Path=IsChecked}"
-        />-->
 
         <Grid  Margin="6 470 0 0"
               HorizontalAlignment="Stretch"  VerticalAlignment="Top" Height="200">
@@ -66,10 +58,6 @@
 
             <Label Content=" Total Bill                    : " HorizontalAlignment="Left" Margin="20 120 0 0" VerticalAlignment="Top" 
                    FontSize="20" Foreground="Black"  Width="250"  FontWeight="Bold"/>
-
-            <!--<Label Content=" Gender                   : " HorizontalAlignment="Left" Margin="1000 120 0 0" VerticalAlignment="Top" 
-                   FontSize="20" Foreground="Black" Width="200"  FontWeight="Bold"/>-->
-
 
             <TextBox  Name="NameTextBox" Text="{Binding ElementName=ItemList2,Path=SelectedItem.Name,Mode=OneWay}" 
                       HorizontalAlignment="Left" Margin="235 0 0 0" Width="180" Height="30" VerticalAlignment="Top"
@@ -99,38 +87,33 @@
                      HorizontalAlignment="Left" Margin="1225 60 0 0" Width="180" Height="30" VerticalAlignment="Top" 
                      FontSize="20" Foreground="Black" Background="White"/>
 
-            <!--<TextBox Name="GenderTextBox" Text="{Binding ElementName=ItemList2,Path=SelectedItem.Gender, Mode=OneWay}" 
-                     HorizontalAlignment="Left" Margin="1225 120 0 0" Width="200" Height="30" VerticalAlignment="Top" 
-                     FontSize="20" Foreground="Black" Background="White"/>-->
-
-
         </Grid>
 
         <Button x:Name="Create2Button" HorizontalAlignment="Left" Margin="175 650 0 0" VerticalAlignment="Top" 
-                  Style="{StaticResource mainbutton}" 
+                  Style="{StaticResource mainbutton}" Background="DarkBlue"
                Click="Create2Button_Click"  Width="150"  Content="Create"/>
 
 
         <Button x:Name="Read2Button" HorizontalAlignment="Left" Margin="500 650 0 0" VerticalAlignment="Top"
-                  Style="{StaticResource mainbutton}" 
+                  Style="{StaticResource mainbutton}" Background="DarkBlue"
                Click="Read2Button_Click" Width="150"  Content="Read"/>
 
 
         <Button x:Name="Update2Button" HorizontalAlignment="Left" Margin="800 650 0 0" VerticalAlignment="Top" 
-                Style="{StaticResource mainbutton}" 
+                Style="{StaticResource mainbutton}" Background="DarkBlue"
                 Click="Update2Button_Click" Width="150"  Content="Update"/>
 
         <Button x:Name="Delete2Button" HorizontalAlignment="Left" Margin="1100 650 0 0" VerticalAlignment="Top" 
-                 Style="{StaticResource mainbutton}" 
+                 Style="{StaticResource mainbutton}" Background="DarkBlue"
                Click="Delete2Button_Click" Width="150" Content="Delete"/>
 
-        <!--<Button x:Name="Back2Button" HorizontalAlignment="Left" Margin="500 720 0 0" VerticalAlignment="Top"
+        <Button x:Name="Back2Button" HorizontalAlignment="Left" Margin="500 720 0 0" VerticalAlignment="Top"
                  Style="{StaticResource mainbutton}" 
-                Width="150"  Content="Back" Background="Red" Click="Back2_Button"/>-->
+                Width="150"  Content="Back" Background="Black" Click="Back2_Button"/>
 
-        <Button x:Name="Exit2Button" HorizontalAlignment="Left" Margin="660 720 0 0" VerticalAlignment="Top" 
+        <Button x:Name="Exit2Button" HorizontalAlignment="Left" Margin="800 720 0 0" VerticalAlignment="Top" 
                  Style="{StaticResource mainbutton}" 
-                Width="150"  Content="Exit" Background="Red" Click="Exit2_Button"/>
+                Width="150"  Content="Exit" Background="Black" Click="Exit2_Button"/>
 
 
     </Grid>

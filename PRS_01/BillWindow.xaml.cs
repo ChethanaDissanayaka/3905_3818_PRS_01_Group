@@ -14,16 +14,14 @@ using System.Windows.Shapes;
 
 namespace PRS_01
 {
-    /// <summary>
-    /// Interaction logic for BillWindow.xaml
-    /// </summary>
+   
     public partial class BillWindow : Window
     {
         public List<Bill> DatabaseData { get; private set; }
        
         public BillWindow()
         {
-            //DataContext = new WindowVM();
+            DataContext = new BillWindowVM();
             InitializeComponent();
         }
 
@@ -40,7 +38,7 @@ namespace PRS_01
                 ser_charge=float.Parse(ServiceTextBox.Text);
                 doc_charge=float.Parse(DocChargeTextBox.Text);
                 total=(ser_charge*no_days) + (doc_charge*no_days);
-                //total = float.Parse(TotalTextBox.Text);
+               
                 TotalTextBox.Text = "" + total;
 
 
@@ -80,7 +78,7 @@ namespace PRS_01
                 ser_charge=float.Parse(ServiceTextBox.Text);
                 doc_charge=float.Parse(DocChargeTextBox.Text);
                 total=(ser_charge* no_days) + (doc_charge* no_days);
-                //total = float.Parse(TotalTextBox.Text);
+              
                 TotalTextBox.Text = "" + total;
 
 
@@ -129,26 +127,17 @@ namespace PRS_01
 
         private void Exit2_Button(object sender, RoutedEventArgs e)
         {
-            var Window = new MainWindow();
+            var Window = new LoginWindow();
             Window.Show();
             this.Close();
         }
 
-
-
-        //private void Back1_Button(object sender, RoutedEventArgs e)
-        //{
-        //    //if (MainWindow.UsernameTextBox.Text == "Admin User")
-        //    //{
-
-        //    //}
-
-        //    var Window = new AdminWindow();
-        //    Window.Show();
-        //    this.Close();
-        //}
-
-
+        private void Back2_Button(object sender, RoutedEventArgs e)
+        {
+            var Window = new MainWindow();
+            Window.Show();
+            this.Close();
+        }
         private void Create2Button_Click(object sender, RoutedEventArgs e)
         {
             Create();

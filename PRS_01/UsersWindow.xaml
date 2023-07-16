@@ -8,7 +8,7 @@
         WindowStartupLocation="CenterScreen"
         WindowStyle="None" ResizeMode="NoResize"
         Title="UsersWindow" Height="690" Width="900">
-    <Grid Background="Pink" Height="680">
+    <Grid Background="DeepSkyBlue" Height="680">
 
         <StackPanel Height="60" HorizontalAlignment="Left" VerticalAlignment="Top" Background="Black" Width="900">
             <TextBlock HorizontalAlignment="Left"  VerticalAlignment="Top" FontSize="30" Margin="320 10 10 10"
@@ -24,7 +24,7 @@
             </ListView.ContextMenu >
             <ListView.View >
                 <GridView >
-                    <!--<GridViewColumn  Header="User Id" Width="150" DisplayMemberBinding="{Binding User_Id}"/>-->
+                    
                     <GridViewColumn Header="User Name" Width="250" DisplayMemberBinding="{Binding User_Name}"/>
                     <GridViewColumn Header="Password" Width="250" DisplayMemberBinding="{Binding Password}"/>
                 </GridView>
@@ -49,28 +49,28 @@
         </Grid>
 
         <Button x:Name="CreateButton" HorizontalAlignment="Left" Margin="60 530 0 0" VerticalAlignment="Top" 
-                FontSize="20" Height="50"  Style="{StaticResource mainbutton}" 
+                FontSize="20" Height="50"  Style="{StaticResource mainbutton}" Background="DarkBlue"
                Click="CreateButton_Click"  Width="150" Foreground="White" Content="Create">
         </Button>
         <Button x:Name="ReadButton" HorizontalAlignment="Left" Margin="270 530 0 0" VerticalAlignment="Top"
-                FontSize="20" Height="50"  Style="{StaticResource mainbutton}" 
+                FontSize="20" Height="50"  Style="{StaticResource mainbutton}" Background="DarkBlue" 
                Click="ReadButton_Click" Width="150" Foreground="White" Content="Read">
         </Button>
         <Button x:Name="UpdateButton" HorizontalAlignment="Left" Margin="480 530 0 0" VerticalAlignment="Top" 
-                FontSize="20" Height="50"  Style="{StaticResource mainbutton}" 
+                FontSize="20" Height="50"  Style="{StaticResource mainbutton}" Background="DarkBlue"
                 Click="UpdateButton_Click" Width="150" Foreground="White" Content="Update">
         </Button>
         <Button x:Name="DeleteButton" HorizontalAlignment="Left" Margin="690 530 0 0" VerticalAlignment="Top" 
-                FontSize="20" Height="50"  Style="{StaticResource mainbutton}" 
+                FontSize="20" Height="50"  Style="{StaticResource mainbutton}" Background="DarkBlue"
                Click="DeleteButton_Click" Width="150" Foreground="White" Content="Delete">
         </Button>
         <Button x:Name="BackButton" HorizontalAlignment="Left" Margin="270 600 0 0" VerticalAlignment="Top"
                 FontSize="20" Height="50"  Style="{StaticResource mainbutton}" 
-                Width="150" Foreground="White" Content="Back" Background="Red" Click="Back_Button">
+                Width="150" Foreground="White" Content="Back" Background="Black" Click="Back_Button">
         </Button>
         <Button x:Name="ExitButton" HorizontalAlignment="Left" Margin="480 600 0 0" VerticalAlignment="Top" 
                 FontSize="20" Height="50"  Style="{StaticResource mainbutton}" 
-                Width="150" Foreground="White" Content="Exit" Background="Red" Click="Exit_Button">
+                Width="150" Foreground="White" Content="Exit" Background="Black" Click="Exit_Button">
         </Button>
 
     </Grid>

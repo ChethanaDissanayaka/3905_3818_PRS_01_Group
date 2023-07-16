@@ -1,4 +1,4 @@
-﻿//using PRS_01;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +18,7 @@ namespace PRS_01
     public partial class PatientsWindow : Window
     {
         public List<Patient> DatabaseData { get; private set; }
-        //public List<Patient> DatabasetPatiens { get; private set; }
+        
         public PatientsWindow()
         {
             DataContext = new PatientsWindowVM();
@@ -118,7 +118,7 @@ namespace PRS_01
 
         private void Exit1_Button(object sender, RoutedEventArgs e)
         {
-            var Window = new MainWindow();
+            var Window = new LoginWindow();
             Window.Show();
             this.Close();
         }
@@ -127,12 +127,9 @@ namespace PRS_01
         
         private void Back1_Button(object sender, RoutedEventArgs e)
         {
-            //if (MainWindow.UsernameTextBox.Text == "Admin User")
-            //{
+           
 
-            //}
-
-            var Window = new AdminWindow();
+            var Window = new MainWindow();
             Window.Show();
             this.Close();
         }
